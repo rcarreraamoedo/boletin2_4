@@ -20,9 +20,9 @@ public class Boletin2_4 {
         int total = bi.nextInt();
         int w,x,y,z;
         w=total/100;
-        x=total/20;
-        y=total/5;
-        z=total/1;
+        x=total%100/20;
+        y=total%20/5;
+        z=total%5/1;
         System.out.println("En billetes de 100€ son: "+(w)+"\nEn billete de 20€ son: "+(x)+"\nEn billetes de 5€ son: "+(y)+"\nEn moedas de 1€ son: "+(z));
     }
     
